@@ -1,40 +1,40 @@
 {
-    "name": "vite-react-typescript-starter",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "lint": "eslint .",
-      "preview": "vite preview",
-      "server": "node server.js",
-       "start": "node server.js"
-    },
-    "dependencies": {
-      "cors": "^2.8.5",
-      "express": "^4.18.3",
-      "lucide-react": "^0.344.0",
-      "react": "^18.3.1",
-      "react-dom": "^18.3.1",
-      "socket.io": "^4.7.4",
-      "socket.io-client": "^4.7.4",
-      "zustand": "^4.5.2"
-    },
-    "devDependencies": {
-      "@eslint/js": "^9.9.1",
-      "@types/react": "^18.3.5",
-      "@types/react-dom": "^18.3.0",
-      "@vitejs/plugin-react": "^4.3.1",
-      "autoprefixer": "^10.4.18",
-      "eslint": "^9.9.1",
-      "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-      "eslint-plugin-react-refresh": "^0.4.11",
-      "globals": "^15.9.0",
-      "postcss": "^8.4.35",
-      "tailwindcss": "^3.4.1",
-      "typescript": "^5.5.3",
-      "typescript-eslint": "^8.3.0",
-      "vite": "^5.4.2"
-    }
+  "name": "vite-react-typescript-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",                  // Keep for local development if you have a front-end
+    "build": "echo 'No build step needed'",  // No build step for a WebSocket server
+    "lint": "eslint .",
+    "preview": "vite preview",      // Optional for local preview (keep if using front-end)
+    "server": "node server.js",     // Start the WebSocket server
+    "start": "node server.js"       // Use this as the main command for Render deployment
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "lucide-react": "^0.344.0",     // Optional, if you need it in your WebSocket server code
+    "react": "^18.3.1",             // Optional, if you need it in your WebSocket server code
+    "react-dom": "^18.3.1",         // Optional, if you need it in your WebSocket server code
+    "socket.io": "^4.7.4",          // Main dependency for WebSocket server
+    "socket.io-client": "^4.7.4",   // Optional if you're also using a client-side app
+    "zustand": "^4.5.2"             // Optional, if using Zustand for state management
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/react": "^18.3.5",      // Optional if using React on the client side
+    "@types/react-dom": "^18.3.0",  // Optional if using React on the client side
+    "@vitejs/plugin-react": "^4.3.1",  // Optional if using Vite for the front-end
+    "autoprefixer": "^10.4.18",      // Optional if using Tailwind CSS on the front-end
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",        // Optional if using Tailwind on the front-end
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.3.0",
+    "vite": "^5.4.2"                // Optional, if using Vite for the front-end
   }
+}
